@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的博客留言</title>
+    <link rel="stylesheet" href="__ROOT__/Public/css/bootstrap.min.css">
+    <script src="__ROOT__/Public/js/jquery-1.12.4.min.js"></script>
+    <script src="__ROOT__/Public/js/bootstrap.min.js"></script>
+    <style>
+    a{
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <include file="Public/header" />
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <h2 class="text-left">
+            留言之地
+            </h2><hr>
+        </div>
+        <div class="col-md-9 column">
+        <form id="ly_tj" role="form">
+          <div class="form-group">
+            昵称：<input type="text" name="fname" placeholder="昵称（可选）">
+            <label for="name"> 留言：</label>
+            <textarea class="form-control" rows="5" name="fly"></textarea>
+            <button type="button" class="btn btn-default" onclick="onTJ()"> 提 交 </button>
+          </div>
+        </form>
+        <hr>
+        <foreach name="ly" item="l" >
+            <div class="media">
+                 <a href="#" class="pull-left">
+                 <img height="100" width="100" src="__PUBLIC__/img/1.jpg" class="media-object" alt='' /></a>
+                <div class="media-body">
+                    <h4 class="media-heading">
+                        “{$l.ly_name}”--<small>{$l.ly_time}</small>
+                    </h4> 
+                    {$l.ly}
+                </div>
+            </div>
+                    <hr>
+        </foreach>
+        {$page}
+        </div>
+
+        <div class="col-md-3 column">
+            <include file="Public/right" />
+        </div>
+
+    </div>
+</div>
+<br>
+<include file="Public/footer" />
+<script>
+    function onTJ(){
+        $.post("{:U('LY/tl')}",$("#ly_tj").serialize(),function(data){
+            location.reload();
+        });
+    }
+</script>
+</body>
+</html>

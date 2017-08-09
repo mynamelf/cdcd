@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的博客博文</title>
+    <link rel="stylesheet" href="__ROOT__/Public/css/bootstrap.min.css">
+    <script src="__ROOT__/Public/js/jquery-1.12.4.min.js"></script>
+    <script src="__ROOT__/Public/js/bootstrap.min.js"></script>
+    <style>
+    a{
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <include file="Public/header" />
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <h2 class="text-left">
+            我的博文
+            </h2><hr>
+        </div>
+        <div class="col-md-9 column">
+        <foreach name="date" item="wz" >
+            <div class="col-md-12 column">
+                <h3>
+                    》{$wz.w_title}
+                </h3>
+                <small>作者：{$wz.w_name} | 时间：{$wz.time} | <span class="glyphicon glyphicon-eye-open"> {$wz.read}</span>
+                </small>
+                <p style="color:#ccc">
+                {$wz.jjie}
+                </p>
+                <p>
+                     <a class="btn" onclick="onRD({$wz.id})">阅读 this »</a>
+                </p>
+                <hr>
+            </div>
+        </foreach>
+
+        {$page}
+        </div>
+        <div class="col-md-3 column">
+            <include file="Public/right" />
+        </div>
+
+    </div>
+</div>
+<include file="Public/footer" />
+</body>
+</html>

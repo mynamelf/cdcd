@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理</title>
+    <link rel="stylesheet" href="__ROOT__/Public/css/bootstrap.min.css">
+    <script src="__ROOT__/Public/js/jquery-1.12.4.min.js"></script>
+    <script src="__ROOT__/Public/js/bootstrap.min.js"></script>
+    <style>
+    a{
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <include file="Public/header" />
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-3 column">
+            <include file="Public/right" />
+        </div>
+        <div class="col-md-9 column">
+            <div class="col-md-12 column">
+            <h2>留言管理</h2>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>昵称</th>
+                            <th>时间</th>
+                            <th>留言</th>
+                            <th>操作</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <foreach name="date" item="ly" >
+                            <tr>
+                                <td>{$ly.id}</td>
+                                <td>{$ly.ly_name}</td>
+                                <td>{$ly.ly_time}</td>
+                                <td>{$ly.ly}</td>
+                                <td>
+                                    <button type="button" class="btn btn-default" title="删除" onclick="onDele({$ly.id})">
+                                    删除
+                                    </button>
+                                </td>
+                            </tr>
+                        </foreach>
+                        <script>
+                        function onDele(d){
+                                $.post('{:U("LY/dodelely")}',{id:d},function(data){
+                                    location.reload();
+                                });
+                            }
+                        </script>
+                    </tbody>
+                </table>
+                {$page}
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<include file="Public/footer" />
+</body>
+</html>

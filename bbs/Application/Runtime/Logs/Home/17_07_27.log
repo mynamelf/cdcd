@@ -1,0 +1,10 @@
+[ 2017-07-27T16:25:28+08:00 ] ::1 /bbs/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001511s ]
+
+[ 2017-07-27T16:25:31+08:00 ] ::1 /bbs/index.php/Home/Blo/d/i/8899.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+

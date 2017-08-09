@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理</title>
+    <link rel="stylesheet" href="__ROOT__/Public/css/bootstrap.min.css">
+    <script src="__ROOT__/Public/js/jquery-1.12.4.min.js"></script>
+    <script src="__ROOT__/Public/js/bootstrap.min.js"></script>
+    <style>
+    a{
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <include file="Public/header" />
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-3 column">
+            <include file="Public/right" />
+        </div>
+        <div class="col-md-9 column">
+            <div class="col-md-12 column">
+            <h2>博文管理</h2>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>标题</th>
+                            <th>作者</th>
+                            <th>时间</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <foreach name="date" item="bw" >
+                            <tr>
+                                <td>{$bw.id}</td>
+                                <td>{$bw.w_title}</td>
+                                <td>{$bw.w_name}</td>
+                                <td>{$bw.time}</td>
+                                <td>
+                                <button type="button" class="btn btn-default" title="简介"
+                                    data-container="body" data-toggle="popover" data-placement="left"
+                                    data-content="{$bw.jjie}">
+                                简介
+                                </button>
+                                <button type="button" class="btn btn-default" title="内容" onclick="onRD({$bw.id})">
+                                内容
+                                </button>
+                                <button type="button" class="btn btn-default" title="删除" onclick="onDele({$bw.id})">
+                                删除
+                                </button>
+                                </td>
+                            </tr>
+                        </foreach>
+                        <script>
+                            function onRD(id){
+                                window.open("{:U('Home/Blo/d/i/"+id+"')}");
+                            }
+                            function onDele(d){
+                                $.post('{:U("BW/dodele")}',{id:d},function(data){
+                                    location.reload();
+                                });
+                            }
+                        </script>
+                    </tbody>
+                </table>
+                {$page}
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<include file="Public/footer" />
+<script>
+$(function (){
+    $("[data-toggle='popover']").popover();
+});
+</script>
+</body>
+</html>

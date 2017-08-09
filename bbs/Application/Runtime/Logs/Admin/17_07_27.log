@@ -1,0 +1,193 @@
+[ 2017-07-27T16:11:43+08:00 ] ::1 /bbs/index.php/Admin/Log/g
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001548s ]
+
+[ 2017-07-27T16:11:51+08:00 ] ::1 /bbs/index.php/Admin/Admin/a.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002009s ]
+
+[ 2017-07-27T16:11:54+08:00 ] ::1 /bbs/index.php/Admin/Admin/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+
+[ 2017-07-27T16:11:57+08:00 ] ::1 /bbs/index.php/Admin/Log/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001602s ]
+
+[ 2017-07-27T16:12:05+08:00 ] ::1 /bbs/index.php/Admin/Admin/a.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001398s ]
+
+[ 2017-07-27T16:12:08+08:00 ] ::1 /bbs/index.php/Admin/Admin/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+
+[ 2017-07-27T16:12:11+08:00 ] ::1 /bbs/index.php/Admin/Log/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000835s ]
+
+[ 2017-07-27T16:15:30+08:00 ] ::1 /bbs/index.php/Admin/Log/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+
+[ 2017-07-27T16:15:34+08:00 ] ::1 /bbs/index.php/Admin/Admin/a.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+
+[ 2017-07-27T16:15:41+08:00 ] ::1 /bbs/index.php/Admin/Admin/a.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001828s ]
+
+[ 2017-07-27T16:16:21+08:00 ] ::1 /bbs/index.php/Admin/Admin/a.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000980s ]
+
+[ 2017-07-27T16:16:24+08:00 ] ::1 /bbs/index.php/Admin/Admin/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+
+[ 2017-07-27T16:16:25+08:00 ] ::1 /bbs/index.php/Admin/Admin/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+
+[ 2017-07-27T16:16:27+08:00 ] ::1 /bbs/index.php/Admin/Admin/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+
+[ 2017-07-27T16:16:32+08:00 ] ::1 /bbs/index.php/Admin/Admin/ud.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+
+[ 2017-07-27T16:16:33+08:00 ] ::1 /bbs/index.php/Admin/Admin/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001033s ]
+
+[ 2017-07-27T16:16:35+08:00 ] ::1 /bbs/index.php/Admin/Admin/ud.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+
+[ 2017-07-27T16:16:36+08:00 ] ::1 /bbs/index.php/Admin/Admin/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+
+[ 2017-07-27T16:16:37+08:00 ] ::1 /bbs/index.php/Admin/Admin/ud.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000782s ]
+
+[ 2017-07-27T16:16:41+08:00 ] ::1 /bbs/index.php/Admin/LY/y.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+
+[ 2017-07-27T16:16:42+08:00 ] ::1 /bbs/index.php/Admin/Admin/ud.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+
+[ 2017-07-27T16:16:44+08:00 ] ::1 /bbs/index.php/Admin/LY/y.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+
+[ 2017-07-27T16:16:45+08:00 ] ::1 /bbs/index.php/Admin/BW/w.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+
+[ 2017-07-27T16:16:47+08:00 ] ::1 /bbs/index.php/Admin/BW/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+
+[ 2017-07-27T16:16:49+08:00 ] ::1 /bbs/index.php/Admin/Admin/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+
+[ 2017-07-27T16:16:50+08:00 ] ::1 /bbs/index.php/Admin/BW/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+
+[ 2017-07-27T16:24:54+08:00 ] ::1 /bbs/index.php/Admin/BW/doadd.html?title=sdasd&uname=%E5%B0%8F%E5%87%89&jjie=sadasda&text=%3Cbr%3Ejijijij%3Cbr%3Esdasdasda%3Cbr%3Easdasdasd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001924s ]
+SQL: SHOW COLUMNS FROM `wz` [ RunTime:0.0044s ]
+SQL: INSERT INTO `wz` (`w_title`,`w_name`,`time`,`jjie`,`text`) VALUES ('sdasd','小凉','2017-07-27 16:24:54','sadasda','<br>jijijij<br>sdasdasda<br>asdasdasd') [ RunTime:0.0701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001251s ]
+
+[ 2017-07-27T16:24:55+08:00 ] ::1 /bbs/index.php/Admin/BW/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+
+[ 2017-07-27T16:24:57+08:00 ] ::1 /bbs/index.php/Admin/Admin/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+
+[ 2017-07-27T16:24:59+08:00 ] ::1 /bbs/index.php/Admin/Admin/ud.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+
+[ 2017-07-27T16:24:59+08:00 ] ::1 /bbs/index.php/Admin/LY/y.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+
+[ 2017-07-27T16:25:00+08:00 ] ::1 /bbs/index.php/Admin/BW/w.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+
+[ 2017-07-27T16:25:21+08:00 ] ::1 /bbs/index.php/Admin/Log/g
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+
+[ 2017-07-27T16:36:01+08:00 ] ::1 /bbs/index.php/Admin/BW/w.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+
+[ 2017-07-27T16:36:06+08:00 ] ::1 /bbs/index.php/Admin/LY/y.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+
+[ 2017-07-27T16:36:43+08:00 ] ::1 /bbs/index.php/Admin/BW/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000914s ]
+
+[ 2017-07-27T16:36:51+08:00 ] ::1 /bbs/index.php/Admin/BW/w.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000842s ]
+

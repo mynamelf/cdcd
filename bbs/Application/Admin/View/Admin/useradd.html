@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理</title>
+    <link rel="stylesheet" href="__ROOT__/Public/css/bootstrap.min.css">
+    <script src="__ROOT__/Public/js/jquery-1.12.4.min.js"></script>
+    <script src="__ROOT__/Public/js/bootstrap.min.js"></script>
+    <style>
+    a{
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <include file="Public/header" />
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-3 column">
+            <include file="Public/right" />
+        </div>
+        <div class="col-md-9 column">
+            <h2>添加用户</h2>
+            <div class="col-md-12 column">
+                <form class="form-horizontal" role="form" id="add">
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="账号" name="user">
+                  </div>
+                  <div class="form-group">
+                      <input type="password" class="form-control" placeholder="密码"  name="password">
+                  </div>
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="昵称" name="name">
+                  </div>
+                  <div class="form-group">
+                        <label class="col-md-2" for="name">性别:</label>
+                        <div class="col-md-10">
+                        <select class="form-control" name="sex">
+                          <option>男</option>
+                          <option>女</option>
+                          <option>保密</option>
+                        </select>
+                        </div>
+                  </div>
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="留言" name="ly">
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="button" class="btn btn-default" onclick="getadd()">提交</button>
+                    </div><span id="p" ></span>
+                  </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<include file="Public/footer" />
+<script>
+function getadd(){
+    $.post('{:U("Admin/uadd")}',$('#add').serialize(),function(data){
+        alert("***"+data+"***");
+        location.reload();
+    });
+}
+</script>
+</body>
+</html>

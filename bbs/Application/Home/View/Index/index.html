@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的博客首页</title>
+    <link rel="stylesheet" href="__ROOT__/Public/css/bootstrap.min.css">
+    <script src="__ROOT__/Public/js/jquery-1.12.4.min.js"></script>
+    <script src="__ROOT__/Public/js/bootstrap.min.js"></script>
+    <style>
+    .bg{ 
+        height:600px;
+        width:100%;
+        filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+        -moz-background-size:100% 100%; 
+        background-size:100% 100%;
+    }
+    a{
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="row clearfix">
+        <div class="col-xs-12 col-sm-12 col-md-12 column">
+            <include file="Public/header" />
+            <div class="jumbotron" style="background: #000;color:#fff">
+                <h1>
+                    凉风博客，Hello, world!
+                </h1>
+                <p>
+                    After contacting PHP, I thought the language was simple, rude and wonderful, so I used it to do this blog.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <h2 class="text-left">
+            我的博文最新选读
+            </h2><hr>
+        </div>
+        <foreach name="data" item="wz" >
+        <div class="col-md-4 column">
+            <h3>
+                “{$wz.w_title}”
+            </h3>
+            <small>作者：{$wz.w_name} | 时间：{$wz.time} | <span class="glyphicon glyphicon-eye-open"> {$wz.read}</span></small>
+            <p style="color:#ccc">
+                {$wz.jjie}
+            </p>
+            <p>
+                 <a class="btn" onclick="onRD({$wz.id})">阅读 点击 »</a>
+            </p>
+        </div>
+        </foreach>
+        <div class="col-md-12 column">
+            <h2 class="text-left">
+            热门博文最新选读
+            </h2><hr>
+        </div>
+        <foreach name="dada" item="w" >
+        <div class="col-md-4 column">
+            <h3>
+                “{$w.w_title}”
+            </h3>
+            <small>作者：{$w.w_name} | 时间：{$w.time} | <span class="glyphicon glyphicon-eye-open"> {$w.read}</span></small>
+            <p style="color:#ccc">
+                {$w.jjie}
+            </p>
+            <p>
+                 <a class="btn" onclick="onRD({$w.id})">阅读 点击 »</a>
+            </p>
+        </div>
+        </foreach>
+        <script>
+            function onRD(id){
+                window.location.href="{:U('Home/Blo/d/i/"+id+"')}";
+            }
+        </script>
+        <div class="col-md-12 column" >
+            <h2 class="text-left">
+            美图秀秀
+            </h2><hr>
+            <div class="col-md-12 column" >
+                <div class="carousel slide " id="carousel-201580">
+                    <div class="carousel-inner">
+                        <div class="item active bg">
+
+                            <img src="__PUBLIC__/img/2.jpg" class="img-thumbnail">
+                            <div class="carousel-caption">
+                             
+                            </div>
+                        </div>
+                        <for start="3" end="8">
+                        
+                        <div class="item col-md-12 bg" >
+                            <img src="__PUBLIC__/img/{$i}.jpg" class="img-thumbnail">
+                            <div class="carousel-caption">
+                            
+                            </div>
+                        </div>
+                        </for>
+                    </div> 
+                    <a class="left carousel-control" href="#carousel-201580" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span></a> 
+                    <a class="right carousel-control" href="#carousel-201580" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<include file="Public/footer" />
+
+</body>
+</html>

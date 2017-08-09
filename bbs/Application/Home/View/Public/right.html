@@ -1,0 +1,43 @@
+<div class="col-md-12 column">
+    <div class="list-group">
+        <a style="background:#000" class="list-group-item active">管理</a>
+        <!-- <div class="list-group-item">
+         <img height="50" width="50" src="__PUBLIC__/img/1.jpg" alt='' /><br>
+         phper
+         &nbsp;&nbsp;&nbsp;
+         <span style="color:#60CAD9 " class="glyphicon glyphicon-tint"></span>
+         </div>
+         <div class="list-group-item">
+         男
+         </div>
+         <div class="list-group-item">
+          留言：123456
+         </div> --> 
+         <div class="list-group-item">
+          游客
+         </div>
+    </div>
+    <div class="list-group">
+        <a href="#" class="list-group-item active">最新博文</a>
+        <foreach name="data" item="wz" key="i">
+            <div class="list-group-item">
+            <span style="background:#60CAD9" class="badge">{$i+1}</span>
+                <a onclick="onRD('{$wz.id}')">{$wz.w_title}</a>
+            </div>
+        </foreach>
+    </div>
+    <div class="list-group">
+        <a href="#" class="list-group-item active">最热博文</a>
+        <foreach name="dae" item="wz" key="i">
+            <div class="list-group-item">
+            <span style="background:#6cCcc0" class="badge">{$wz.read}</span>
+                <a onclick="onRD('{$wz.id}')">{$wz.w_title}</a>
+            </div>
+        </foreach>
+    </div>
+</div>
+<script>
+    function onRD(id){
+        window.location.href="{:U('Home/Blo/d/i/"+id+"')}";
+    }
+</script>

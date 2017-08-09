@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理</title>
+    <link rel="stylesheet" href="__ROOT__/Public/css/bootstrap.min.css">
+    <script src="__ROOT__/Public/js/jquery-1.12.4.min.js"></script>
+    <script src="__ROOT__/Public/js/bootstrap.min.js"></script>
+    <style>
+    a{
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <include file="Public/header" />
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-3 column">
+            <include file="Public/right" />
+        </div>
+        <div class="col-md-9 column">
+            <div class="col-md-12 column">
+            <h2>用户管理</h2>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>账号</th>
+                            <th>名字</th>
+                            <th>性别</th>
+                            <th>类型</th>
+                            <th>留言</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <foreach name="date" item="us" >
+                            <tr>
+                                <td>{$us.id}</td>
+                                <td>{$us.per_user}</td>
+                                <td>{$us.per_name}</td>
+                                <td>{$us.per_sex}</td>
+                                <td>{$us.per_ty}</td>
+                                <td>{$us.per_ly}</td>
+                            </tr>
+                        </foreach>
+                    </tbody>
+                </table>
+                {$page}
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<include file="Public/footer" />
+</body>
+</html>
